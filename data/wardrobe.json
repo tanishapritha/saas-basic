@@ -1,0 +1,5 @@
+[
+    {"name":"Blue Shirt","type":"top","season":"summer","image":"assets/clothes/shirt1.png"},
+    {"name":"Black Pants","type":"bottom","season":"winter","image":"assets/clothes/pants1.png"},
+    {"name":"Red Dress","type":"top","season":"summer","image":"assets/clothes/dress1.png"}
+]
