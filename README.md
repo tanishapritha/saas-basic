@@ -1,4 +1,4 @@
-# DesignMNC - Fashion SaaS Frontend
+# Fashion SaaS Frontend
 
 A basic interactive frontend for fashion professionals with features, pricing, testimonials, dark mode, and responsive design.
 
@@ -10,4 +10,4 @@ A basic interactive frontend for fashion professionals with features, pricing, t
 ![Light Mode Screenshot](assets/ss/l.png)
 
 **Dark Mode (ss/d)**  
-![Dark Mode Screenshot](assets/ss/d.png)
+![Dark Mode Screenshot](assets/ss/d.png).
