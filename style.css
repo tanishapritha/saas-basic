@@ -213,3 +213,21 @@ body.dark-mode footer {background: var(--dark-footer-bg); color: var(--dark-text
   font-size: 1.5rem; cursor: pointer;
   font-weight: bold;
 }
+
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-form input,
+.modal-form textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  resize: none;
+}
+.modal-form button {
+  margin-top: 0.5rem;
+}

@@ -48,10 +48,27 @@ window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; }
 // Trigger Modals
 // ==========================
 
-// Hero "Try Free" button
+
+// Hero "Try Free" button opens a real form
 document.querySelectorAll('.hero .cta-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    openModal('Start Your Free Trial', 'Fill in your details and start exploring DesignMNC SaaS!');
+    modalBody.innerHTML = `
+      <h3>Start Your Free Trial</h3>
+      <form id="modalForm" class="modal-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Message (Optional)"></textarea>
+        <button type="submit" class="cta-btn">Submit</button>
+      </form>
+    `;
+    modal.style.display = 'flex';
+
+    // Handle form submission
+    document.getElementById('modalForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your trial request has been submitted.');
+      modal.style.display = 'none';
+    });
   });
 });
 
