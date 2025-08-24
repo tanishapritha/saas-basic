@@ -1,6 +1,4 @@
-/* ===========================
-   Root Variables
-=========================== */
+
 :root {
   /* Light Mode */
   --primary-bg: #F8F9FA;
@@ -22,15 +20,11 @@ body, .navbar, .hero, .feature-card, .pricing-card, .testimonial-card, footer, i
   transition: background 0.4s, color 0.4s, transform 0.25s, box-shadow 0.3s;
 }
 
-/* ===========================
-   Reset
-=========================== */
+/* Reset */
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary-text); background:var(--primary-bg);}
 
-/* ===========================
-   Navbar
-=========================== */
+/* Navbar */
 .navbar {
   display:flex; justify-content:space-between; align-items:center;
   padding:1rem 2rem; position:sticky; top:0; z-index:1000;
@@ -52,9 +46,7 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
 }
 .mobile-menu-toggle {display:none; cursor:pointer; font-size:1.8rem;}
 
-/* ===========================
-   Hero Section
-=========================== */
+/* Hero Section */
 .hero {
   display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;
   padding:6rem 2rem; border-radius:15px;
@@ -67,9 +59,7 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
 .hero-text p {font-size:1.2rem; margin-bottom:2rem;}
 .hero-image img {border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.1);}
 
-/* ===========================
-   Features
-=========================== */
+/* Features */
 .features {
   display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; padding:4rem 2rem;
 }
@@ -82,17 +72,13 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
   box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* ===========================
-   About
-=========================== */
+/* About */
 .about {display:flex; flex-wrap:wrap; align-items:center; gap:2.5rem; padding:4rem 2rem;}
 .about-image img {border-radius:15px; max-width:100%;}
 .about-text h2 {font-family:'Playfair Display', serif; font-size:2.2rem; margin-bottom:1rem;}
 .about-text p {margin-bottom:1rem; color:var(--primary-text);}
 
-/* ===========================
-   Pricing
-=========================== */
+/* Pricing */
 .pricing {text-align:center; padding:4rem 2rem;}
 .pricing h2 {font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:2rem;}
 .pricing-cards {display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;}
@@ -110,9 +96,7 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
 .pricing-card ul {list-style:none; margin:1rem 0;}
 .pricing-card .price {font-size:1.8rem; margin:1rem 0; font-weight:700;}
 
-/* ===========================
-   Testimonials
-=========================== */
+/* Testimonials */
 .testimonials {padding:4rem 2rem; text-align:center; background:var(--primary-bg);}
 .testimonial-cards {display:flex; flex-wrap:wrap; gap:2rem; justify-content:center;}
 .testimonial-card {
@@ -121,9 +105,7 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
 }
 .testimonial-card p {margin-bottom:1rem; font-style:italic; color:var(--primary-text);}
 
-/* ===========================
-   Contact
-=========================== */
+/* Contact */
 .contact {padding:4rem 2rem; text-align:center;}
 .contact-form {display:flex; flex-direction:column; gap:1rem; max-width:450px; margin:0 auto;}
 .contact-form input, .contact-form textarea {
@@ -131,14 +113,10 @@ body {font-family:'Montserrat', sans-serif; line-height:1.6; color:var(--primary
 }
 .contact-form button {margin-top:1rem;}
 
-/* ===========================
-   Footer
-=========================== */
+/* Footer */
 footer {padding:2rem 2rem; text-align:center; background:#f1f1f1; color:var(--primary-text); border-top:1px solid #ddd;}
 
-/* ===========================
-   Responsive
-=========================== */
+/* Responsive */
 @media(max-width:768px){
   .hero, .about {flex-direction:column;}
   .nav-links {display:none; flex-direction:column; background:#fff; position:absolute; top:100%; right:0; width:200px; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.1);}
@@ -146,9 +124,7 @@ footer {padding:2rem 2rem; text-align:center; background:#f1f1f1; color:var(--pr
   .mobile-menu-toggle {display:block;}
 }
 
-/* ===========================
-   Dark Mode
-=========================== */
+/* Dark Mode */
 body.dark-mode {
   background: var(--dark-bg);
   color: var(--dark-text);
@@ -164,9 +140,8 @@ body.dark-mode .about, body.dark-mode .testimonials {background: var(--dark-sect
 body.dark-mode input, body.dark-mode textarea {background: #1E1E1E; border: 1px solid #333; color:#fff;}
 body.dark-mode footer {background: var(--dark-footer-bg); color: var(--dark-text);}
 
-/* ===========================
-   Keyframes
-=========================== */
+
+
 @keyframes gradient-shift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -230,4 +205,20 @@ body.dark-mode footer {background: var(--dark-footer-bg); color: var(--dark-text
 }
 .modal-form button {
   margin-top: 0.5rem;
+}
+
+
+
+body.dark-mode .testimonial-card {
+  background: rgba(255, 255, 255, 0.08); /* slightly lighter card */
+  color: #ffffff; /* text color */
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .testimonial-card p {
+  color: #e0e0e0; /* softer light color for paragraph */
+}
+
+body.dark-mode .testimonial-card h4 {
+  color: #ffffff; /* keep client name fully visible */
 }
